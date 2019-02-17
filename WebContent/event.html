@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Event Registration</title>
+		<meta name="author" content="Joyce Tejada">
+		<meta name="description" content="Annual Cycling Event">
+		<link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet"><!-- Google API font reference -->
+		<style>
+			h2 {
+				font-family: 'Chicle', cursive;
+			    text-align: center;
+			    font-size: 4.8rem;
+			    color: #c55a11; 
+			    margin: auto ;
+			    padding: 0.5rem;
+			}		
+			p {
+			    font-family: 'Handlee', cursive;
+			    color: #000000;
+			    text-align: center;
+			    line-height: 1.5rem;
+			    font-size:1.3rem;
+			}
+			form fieldset {
+			    margin: 1%;
+			    border-radius: 20px;
+			    border-color: #f3c779;
+			    color: #000000;
+			    background-color: #f3c779;
+			}			
+			form legend {
+			    color: #ffffff;
+			    margin-left: 5%;
+			    padding: 0.7rem;
+			    border: 1px solid #f3c779;
+			    background-color: #c55a11;
+			    border-radius: 0.3em;
+			    font-family: 'Chicle', cursive;
+			    font-size: 2rem;
+			    letter-spacing: 0.05rem;
+			}			
+			form label {
+			    display: block;
+			    margin: 0.5%;
+			}			
+			form label span {
+			    display: block;
+			    padding: 2.3% 0 0.7%;  
+			    font-family: 'Chicle', cursive;
+			    font-size: 1.5rem;
+			    letter-spacing: 0.05rem;
+			}			
+			input {
+			    font-family: 'Handlee', cursive;
+			    font-size: 1.2rem;
+			    padding: 0.5% 2%;
+			    margin-left: 1%;
+			    width: 80%;
+			    border-radius: 10px
+			}			
+			input.submitBt {
+			    -webkit-appearance:none;
+			    font-family: 'Chicle', cursive;
+			    color: #ffffff;
+			    border: 1px solid #f3c779;
+			    border-radius: 7px;
+			    width: 50%;
+			    margin: 0.5em;
+			    font-size: 1.5rem;
+		        word-spacing: 1rem;
+		        letter-spacing: 0.1rem;
+			    padding: 0.6em;
+			    background-color: #8d400c;
+			    box-shadow: 4px 4px 10px #666;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Networking Conference 2019</h2>
+		<p>Don't miss this conference! Register Now!</p>
+		<form action="Servlet2" method="post">
+		    <fieldset>
+		        <legend><span>Personal Information</span></legend>
+		        <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z .-_]{5,99}" placeholder="Full Name" required></label>
+		        <label><span>Email:</span><input name="email" type="email" value="" placeholder="name123@gmail.com"></label>
+		        <label><span>Phone Number:</span><input name="phone" type="tel" value="" placeholder="2224567991" pattern="[0-9]{10,20}" required></label>
+		        <label><span>Date of birth:</span><input name="birthday" type="date" required></label>
+		        
+		    </fieldset>
+		    <input type="submit" value="Register Now !!" class="submitBt">
+		</form>	
+	</body>
+</html>
